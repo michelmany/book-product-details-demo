@@ -23,7 +23,7 @@ To preview the production build locally: ```npm run preview```
 ## Where to Test the Application
 
 - **Local Testing**: Access at http://localhost:5173/ when running the development server
-- **Live Demo**: Visit [books.yourdomain.com](https://books.yourdomain.com) to see the deployed version
+- **Live Demo**: Visit [books.yourdomain.com](https://books.michelmany.com) to see the deployed version
 
 ## Future Improvements
 
