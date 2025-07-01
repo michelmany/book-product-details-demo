@@ -1,0 +1,67 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+body {
+    @include lato-font;
+    line-height: 150%;
+    color: var(--lynx-black);
+    background-color: var(--white-smoke);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.app {
+
+    &__loading,
+    &__error,
+    &__no-data {
+        text-align: center;
+        padding: 3rem;
+        font-size: 1.2rem;
+    }
+
+    &__error {
+        color: #d32f2f;
+    }
+
+    &__loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px;
+    background-color: var(--supadu-teal);
+    color: white;
+    z-index: 100;
+    transition: top 0.2s ease;
+
+    &:focus {
+        top: 0;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

@@ -1,0 +1,23 @@
+@use "sass:color";
+
+@mixin lato-font {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin hover-transition($color) {
+    transition: color 0.3s;
+
+    &:hover {
+        color: color.adjust($color, $lightness: -10%);
+        transition: color 0.3s;
+    }
+}
+
+@mixin hover-bg-transition($color) {
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: color.adjust($color, $lightness: -10%);
+        transition: background-color 0.3s;
+    }
+}

@@ -1,0 +1,27 @@
+.product__retailer-button {
+    display: inline-block;
+    padding: 10px 16px;
+    color: var(--supadu-teal);
+    background-color: transparent;
+    border: 2px solid var(--supadu-teal);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--supadu-teal);
+        color: white;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.3);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
